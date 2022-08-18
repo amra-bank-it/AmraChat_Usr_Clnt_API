@@ -22,27 +22,10 @@ public class AfterSetup {
     @EventListener(ApplicationReadyEvent.class)
     public void runAfterStartup() {
         if(!usersDao.existsById(1L)){
-            User user =
-                    new User(1L,
-                            "support",
-                            "amra",
-                            "chat",
-                            "Support",
-                            "Amra"
-                            );
-
-            usersDao.save(user);
+           usersDao.addFirstClient();
         }
         if(!clientsDao.existsById(1L)){
-            Client client = new Client(
-                    1L,
-                    "TestClient",
-                    "TestClient",
-                    "TestClient",
-                    "+00000000000"
-
-            );
-            clientsDao.save(client);
+            clientsDao.addFirstClient();
         }
 
         System.out.println("Yaaah, I am running........");

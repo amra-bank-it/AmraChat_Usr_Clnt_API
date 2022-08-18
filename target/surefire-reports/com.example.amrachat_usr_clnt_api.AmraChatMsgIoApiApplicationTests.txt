@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.example.amrachat_usr_clnt_api.AmraChatMsgIoApiApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.462 s - in com.example.amrachat_usr_clnt_api.AmraChatMsgIoApiApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.12 s - in com.example.amrachat_usr_clnt_api.AmraChatMsgIoApiApplicationTests

@@ -54,6 +54,10 @@ public class ClientsController {
     public ResponseEntity<?> deleteUser(@RequestBody Client client) {
         String resMsg;
         try {
+            if(client.getId()==1){
+                throw new Exception("Permission denied for delete client with id = 1");
+            }
+
             if(clientsDao.existsById(client.getId())) {
                 clientsDao.delete(client);
                 resMsg = "{Client with id: " + client.getId() + " deleted}";

@@ -53,6 +53,9 @@ public class UsersController {
     public ResponseEntity<?> deleteUser(@RequestBody User user) {
         String resMsg;
         try {
+            if(user.getId()==1){
+                throw new Exception("Permission denied for delete user with id = 1");
+            }
             if(usersDao.existsById(user.getId())) {
                 usersDao.delete(user);
                 resMsg = "{User with id: " + user.getId() + " deleted}";
