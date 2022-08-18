@@ -1,0 +1,8 @@
+com/example/amrachat_usr_clnt_api/dao/ClientsDao.class
+com/example/amrachat_usr_clnt_api/model/Client.class
+com/example/amrachat_usr_clnt_api/dao/UsersDao.class
+com/example/amrachat_usr_clnt_api/model/User.class
+com/example/amrachat_usr_clnt_api/controller/UsersController.class
+com/example/amrachat_usr_clnt_api/controller/ClientsController.class
+com/example/amrachat_usr_clnt_api/AmraChatMsgIoApiApplication.class
+com/example/amrachat_usr_clnt_api/dbInit/AfterSetup.class
